@@ -1,0 +1,157 @@
+.grid {
+    display: grid;
+    grid-template-rows: 300px 90px 1fr 50px ;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+header {
+    background-image: url("header2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-row: 1;
+}
+
+nav {
+    background-color: rgb(138, 211, 102);
+    grid-row: 2;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 .7rem 1rem rgba(0,0,0,.1);
+}
+
+main {
+    grid-row: 3 / -1;
+}
+
+footer {
+    grid-row: 4;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(253, 249, 243);
+    text-align: center;
+}
+
+h2 {
+    font-size: 29px;
+    color: rgb(85, 58, 24);
+    margin: 5%;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(85, 58, 24);
+    margin: 5%;
+}
+
+p {
+    font-size: 19px;
+    color: rgb(85, 58, 24);
+    margin: 5%;
+}
+
+ul {
+    font-size: 19px;
+    color: rgb(85, 58, 24);
+    margin: 5%;
+}
+
+img {
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.copyright {
+    color: white;
+}
+
+a:hover {
+    color:rgb(145, 156, 70);
+}
+
+.yarnAndHooks {
+    margin: auto;
+    background-color: rgb(255, 208, 215);
+    min-width: 200px;
+    border-collapse: collapse;
+}
+
+.yarnAndHooks thead {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(85, 58, 24);
+    background-color: rgb(226, 146, 160);
+}
+
+.yarnAndHooks td {
+    font-size: 19px;
+    color: rgb(85, 58, 24);
+    padding: 12px 17px;
+}
+
+.yarnAndHooks tr {
+    border-bottom: 2px solid rgb(85, 58, 24);
+}
+
+.validator {
+    float: left;
+    margin: 10px;
+    height: 50px;
+    width:50px
+}
+
+.nav {
+    color: rgb(39, 64, 10);
+    margin: auto;
+    padding: 10px;
+    font-size: 23px;
+}
+
+#mainPage {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 300px 90px ;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: rgb(253, 249, 243);
+        text-align: center;
+        position: relative;
+        top: 10%;
+        margin: 10%;
+    }
+    
+    h2 {
+        font-size: 39px;
+        color: rgb(85, 58, 24);
+        margin: 5%;
+    }
+
+    h3 {
+        font-size: 33px;
+        color: rgb(85, 58, 24);
+        margin: 5%;
+    }
+    
+    img {
+        width: 50%;
+    }
+    
+}
